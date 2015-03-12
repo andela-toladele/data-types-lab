@@ -17,7 +17,7 @@ describe("Data types tests ", function() {
       expect(dataTypes(true)).toBe(true);
     });
 
-    it("should return false for `true`", function() {
+    it("should return false for `false`", function() {
       expect(dataTypes(false)).toBe(false);
     });
 
@@ -33,7 +33,7 @@ describe("Data types tests ", function() {
       expect(dataTypes(144)).toBe('more than 100');
     });
 
-    it("should return '100' for 100", function() {
+    it("should return 'equal to 100' for 100", function() {
       expect(dataTypes(100)).toBe('equal to 100');
     });
 
@@ -42,7 +42,7 @@ describe("Data types tests ", function() {
 
   describe("Case for Strings", function() {
 
-    it("should return the length of  `tergiversate`", function() {
+    it("should return the length of `tergiversate`", function() {
       expect(dataTypes('tergiversate')).toBe(12);
     });
 
